@@ -133,10 +133,15 @@ class PublicContentController extends Controller
 
         $visas = $visasQuery->get();
 
+        $activeCategory = $activeCategorySlug !== ''
+            ? $categories->firstWhere('slug', $activeCategorySlug)
+            : null;
+
         return view('pages.visas', [
             'visas' => $visas,
             'categories' => $categories,
             'activeCategorySlug' => $activeCategorySlug,
+            'activeCategory' => $activeCategory,
         ]);
     }
 
