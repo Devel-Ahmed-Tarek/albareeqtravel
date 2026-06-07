@@ -6,8 +6,8 @@
         ['r' => 'hotels', 'is' => ['hotels']],
         ['r' => 'destinations', 'is' => ['destinations']],
         ['r' => 'visas', 'is' => ['visas']],
-        ['r' => 'blog', 'is' => ['blog', 'blog.show']],
-        ['r' => 'news', 'is' => ['news', 'news.show']],
+        // ['r' => 'blog', 'is' => ['blog', 'blog.show']],
+        // ['r' => 'news', 'is' => ['news', 'news.show']],
         ['r' => 'offers', 'is' => ['offers']],
     ];
 @endphp

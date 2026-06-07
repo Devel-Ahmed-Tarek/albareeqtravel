@@ -26,9 +26,9 @@
         <nav class="flex max-w-sm flex-wrap justify-center gap-x-4 gap-y-2 md:justify-end" aria-label="Footer">
             <a href="{{ localized_route('about') }}" class="hover:text-amber-700">{{ tr('site.nav.about') }}</a>
             <a href="{{ localized_route('programs') }}" class="hover:text-amber-700">{{ tr('site.nav.programs') }}</a>
-            <a href="{{ localized_route('blog') }}" class="hover:text-amber-700">{{ tr('site.nav.blog') }}</a>
+            {{-- <a href="{{ localized_route('blog') }}" class="hover:text-amber-700">{{ tr('site.nav.blog') }}</a> --}}
             <a href="{{ localized_route('visas') }}" class="hover:text-amber-700">{{ tr('site.nav.visas') }}</a>
-            <a href="{{ localized_route('news') }}" class="hover:text-amber-700">{{ tr('site.nav.news') }}</a>
+            {{-- <a href="{{ localized_route('news') }}" class="hover:text-amber-700">{{ tr('site.nav.news') }}</a> --}}
             <a href="{{ localized_route('offers') }}" class="hover:text-amber-700">{{ tr('site.nav.offers') }}</a>
             <a href="{{ site_whatsapp_url() }}" class="hover:text-amber-700" target="_blank" rel="noopener noreferrer">{{ tr('site.contact.wa') }}</a>
         </nav>

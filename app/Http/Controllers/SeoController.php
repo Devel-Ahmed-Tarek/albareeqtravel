@@ -34,8 +34,8 @@ class SeoController extends Controller
                 'destinations',
                 'visas',
                 'offers',
-                'blog',
-                'news',
+                // 'blog',
+                // 'news',
             ];
 
             $urls = [];
@@ -50,27 +50,27 @@ class SeoController extends Controller
                 }
             }
 
-            $posts = BlogPost::query()->published()->get(['slug', 'updated_at']);
-            foreach (['', 'en'] as $prefix) {
-                foreach ($posts as $post) {
-                    $fullPath = trim(($prefix !== '' ? $prefix.'/' : '').'blog/'.$post->slug, '/');
-                    $urls[] = [
-                        'loc' => url('/'.$fullPath),
-                        'lastmod' => optional($post->updated_at)->toAtomString() ?? $now,
-                    ];
-                }
-            }
+            // $posts = BlogPost::query()->published()->get(['slug', 'updated_at']);
+            // foreach (['', 'en'] as $prefix) {
+            //     foreach ($posts as $post) {
+            //         $fullPath = trim(($prefix !== '' ? $prefix.'/' : '').'blog/'.$post->slug, '/');
+            //         $urls[] = [
+            //             'loc' => url('/'.$fullPath),
+            //             'lastmod' => optional($post->updated_at)->toAtomString() ?? $now,
+            //         ];
+            //     }
+            // }
 
-            $news = NewsItem::query()->published()->get(['slug', 'updated_at']);
-            foreach (['', 'en'] as $prefix) {
-                foreach ($news as $item) {
-                    $fullPath = trim(($prefix !== '' ? $prefix.'/' : '').'news/'.$item->slug, '/');
-                    $urls[] = [
-                        'loc' => url('/'.$fullPath),
-                        'lastmod' => optional($item->updated_at)->toAtomString() ?? $now,
-                    ];
-                }
-            }
+            // $news = NewsItem::query()->published()->get(['slug', 'updated_at']);
+            // foreach (['', 'en'] as $prefix) {
+            //     foreach ($news as $item) {
+            //         $fullPath = trim(($prefix !== '' ? $prefix.'/' : '').'news/'.$item->slug, '/');
+            //         $urls[] = [
+            //             'loc' => url('/'.$fullPath),
+            //             'lastmod' => optional($item->updated_at)->toAtomString() ?? $now,
+            //         ];
+            //     }
+            // }
 
             $rows = array_map(static function (array $u): string {
                 return "<url><loc>{$u['loc']}</loc><lastmod>{$u['lastmod']}</lastmod></url>";

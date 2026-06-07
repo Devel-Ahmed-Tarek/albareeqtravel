@@ -16,10 +16,10 @@ $registerSiteRoutes = function (): void {
     Route::get('/hotels', [PublicContentController::class, 'hotels'])->name('hotels');
     Route::get('/destinations', [PublicContentController::class, 'destinations'])->name('destinations');
     Route::get('/visas', [PublicContentController::class, 'visas'])->name('visas');
-    Route::get('/blog', [PublicContentController::class, 'blogIndex'])->name('blog');
-    Route::get('/blog/{slug}', [PublicContentController::class, 'blogShow'])->name('blog.show');
-    Route::get('/news', [PublicContentController::class, 'newsIndex'])->name('news');
-    Route::get('/news/{slug}', [PublicContentController::class, 'newsShow'])->name('news.show');
+    // Route::get('/blog', [PublicContentController::class, 'blogIndex'])->name('blog');
+    // Route::get('/blog/{slug}', [PublicContentController::class, 'blogShow'])->name('blog.show');
+    // Route::get('/news', [PublicContentController::class, 'newsIndex'])->name('news');
+    // Route::get('/news/{slug}', [PublicContentController::class, 'newsShow'])->name('news.show');
     Route::get('/offers', [PublicContentController::class, 'offersPage'])->name('offers');
 };
 

@@ -151,6 +151,7 @@
                     <h3 class="mb-2 font-bold text-bareeq-navy">{{ tr('site.nav.destinations') }}</h3>
                     <p class="text-sm text-slate-600">{{ tr('site.home.discover_lead_destinations') }}</p>
                 </a>
+                {{--
                 <a
                     href="{{ localized_route('blog') }}"
                     class="glass-panel-dark group overflow-hidden rounded-2xl p-6 transition will-change-transform hover:-translate-y-1 hover:border-amber-400/25"
@@ -165,6 +166,7 @@
                     <h3 class="mb-2 font-bold text-bareeq-navy">{{ tr('site.nav.news') }}</h3>
                     <p class="text-sm text-slate-600">{{ tr('site.home.discover_lead_news') }}</p>
                 </a>
+                --}}
                 <a
                     href="{{ localized_route('offers') }}"
                     class="glass-panel-dark group overflow-hidden rounded-2xl p-6 transition will-change-transform hover:-translate-y-1 hover:border-amber-400/25"
