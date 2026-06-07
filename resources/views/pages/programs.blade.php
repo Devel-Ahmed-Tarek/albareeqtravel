@@ -5,7 +5,7 @@
 @section('meta_description', tr('site.pages.programs.meta_description'))
 
 @section('content')
-    <div class="border-b border-slate-200/80 py-12 md:py-16">
+    <div class="bareeq-page-head py-12 md:py-16">
         <div class="mx-auto max-w-3xl px-4 text-center md:px-6">
             <h1 class="font-heading text-3xl font-bold text-bareeq-navy md:text-4xl">
                 {{ tr('site.pages.programs.h1') }}
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <section class="py-12 md:py-20" aria-labelledby="services">
+    <section class="bareeq-section py-12 md:py-20" aria-labelledby="services">
         <div class="mx-auto max-w-6xl px-4 md:px-6">
             <h2 id="services" class="mb-8 text-center font-heading text-2xl font-bold text-bareeq-navy">
                 {{ tr('site.pages.programs.services_h2') }}
@@ -54,5 +54,6 @@
         'items' => $tripShowcaseItems,
         'theme' => 'trips',
         'layout' => 'grid',
+        'variant' => 'warm',
     ])
 @endsection

@@ -5,7 +5,7 @@
 @section('meta_description', tr('site.pages.hotels.meta_description'))
 
 @section('content')
-    <div class="border-b border-slate-200/80 py-12 md:py-16">
+    <div class="bareeq-page-head py-12 md:py-16">
         <div class="mx-auto max-w-3xl px-4 text-center md:px-6">
             <h1 class="font-heading text-3xl font-bold text-bareeq-navy md:text-4xl">
                 {{ tr('site.pages.hotels.h1') }}
@@ -21,10 +21,11 @@
         'items' => $hotelShowcaseItems,
         'theme' => 'hotels',
         'layout' => 'grid',
+        'variant' => 'sky',
     ])
 
     <section
-        class="border-t border-slate-200/80 bg-gradient-to-b from-transparent to-sky-50/60 py-16 md:py-24"
+        class="bareeq-section bareeq-section--warm py-16 md:py-24"
         aria-labelledby="hotel-cta"
     >
         <div class="mx-auto max-w-2xl px-4 text-center md:px-6">

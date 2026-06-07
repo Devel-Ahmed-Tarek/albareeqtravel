@@ -6,10 +6,17 @@
     $autoplay = $autoplay ?? 5000;
     $theme = $theme ?? 'default';
     $layout = $layout ?? 'carousel';
+    $variant = $variant ?? '';
+    $sectionClass = match ($variant) {
+        'sky' => 'bareeq-section bareeq-section--sky',
+        'warm' => 'bareeq-section bareeq-section--warm',
+        'soft' => 'bareeq-section bareeq-section--soft',
+        default => 'bareeq-section',
+    };
 @endphp
 
 <section
-    class="border-b border-slate-200/80 py-16 md:py-24"
+    class="{{ $sectionClass }} py-16 md:py-24"
     data-reveal
     aria-labelledby="heading-{{ $uid }}"
 >

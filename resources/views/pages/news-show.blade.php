@@ -6,7 +6,7 @@
 
 @section('content')
     <article>
-        <div class="border-b border-slate-200/80 py-10 md:py-14">
+        <div class="bareeq-page-head py-10 md:py-14">
             <div class="mx-auto max-w-3xl px-4 text-center md:px-6">
                 <p class="text-sm text-amber-800/90">{{ tr('site.news_badge') }}</p>
                 <p class="mt-1 text-sm text-slate-500">
@@ -34,14 +34,13 @@
             ></div>
         @endif
 
-        <div
-            class="prose-article mx-auto max-w-3xl px-4 py-12 text-slate-700 md:px-6 md:py-16"
-            data-reveal
-        >
-            {!! $item->t('body') !!}
+        <div class="bareeq-section bareeq-section--soft py-12 text-slate-700 md:py-16">
+            <div class="prose-article mx-auto max-w-3xl px-4 md:px-6" data-reveal>
+                {!! $item->t('body') !!}
+            </div>
         </div>
 
-        <div class="border-t border-slate-200/80 py-10">
+        <div class="bareeq-section py-10">
             <div class="mx-auto max-w-3xl px-4 text-center md:px-6">
                 <a
                     href="{{ localized_route('news') }}"

@@ -5,7 +5,7 @@
 @section('meta_description', tr('site.pages.about.meta_description'))
 
 @section('content')
-    <div class="border-b border-slate-200/80 py-12 md:py-16">
+    <div class="bareeq-page-head py-12 md:py-16">
         <div class="mx-auto max-w-3xl px-4 text-center md:px-6">
             <h1 class="font-heading text-3xl font-bold text-bareeq-navy md:text-4xl">
                 {{ tr('site.pages.about.h1') }}
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <section class="py-16 md:py-24" aria-labelledby="about-why">
+    <section class="bareeq-section py-16 md:py-24" aria-labelledby="about-why">
         <div class="mx-auto max-w-6xl px-4 md:px-6">
             <h2 id="about-why" class="mb-8 text-center font-heading text-2xl font-bold text-bareeq-navy md:text-3xl">
                 {!! tr('site.pages.about.why_title') !!}
@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section class="border-t border-slate-200/80 bg-sky-50/50 py-16 md:py-20" aria-labelledby="values">
+    <section class="bareeq-section bareeq-section--sky py-16 md:py-20" aria-labelledby="values">
         <div class="mx-auto max-w-6xl px-4 md:px-6">
             <h2 id="values" class="mb-8 text-center font-heading text-2xl font-bold text-bareeq-navy">
                 {{ tr('site.pages.about.values_h2') }}

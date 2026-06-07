@@ -6,7 +6,7 @@
     @include('partials.hero-slider', ['slides' => $heroSlides, 'autoplay' => 7000])
 
     <section
-        class="border-b border-slate-200/80 py-16 md:py-24"
+        class="bareeq-section py-16 md:py-24"
         aria-labelledby="home-about"
         data-reveal
     >
@@ -70,7 +70,7 @@
     </section>
 
     <section
-        class="border-b border-slate-200/80 bg-sky-50/50 py-16 md:py-24"
+        class="bareeq-section bareeq-section--sky py-16 md:py-24"
         aria-labelledby="home-branches"
         data-reveal
     >
@@ -121,7 +121,7 @@
     </section>
 
     <section
-        class="border-b border-slate-200/80 py-16 md:py-24"
+        class="bareeq-section py-16 md:py-24"
         aria-label="{{ tr('site.home.discover_aria') }}"
         data-reveal
     >
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="border-b border-slate-200/80 bg-sky-50/40 py-16 md:py-24" data-reveal aria-labelledby="home-visas">
+    <section class="bareeq-section bareeq-section--warm py-16 md:py-24" data-reveal aria-labelledby="home-visas">
         <div class="mx-auto max-w-6xl px-4 md:px-6">
             <div class="mb-8 flex flex-wrap items-center justify-between gap-4">
                 <h2 id="home-visas" class="font-heading text-2xl font-bold text-bareeq-navy md:text-3xl">
@@ -218,6 +218,7 @@
         'items' => $mapDestinationItems,
         'autoplay' => 5200,
         'theme' => 'default',
+        'variant' => 'sky',
     ])
 
     @include('partials.slider-bareeq', [
@@ -227,6 +228,7 @@
         'items' => $tripShowcaseItems,
         'theme' => 'trips',
         'layout' => 'grid',
+        'variant' => 'soft',
     ])
 
     @include('partials.slider-bareeq', [
@@ -236,6 +238,7 @@
         'items' => $reviewItems,
         'theme' => 'reviews',
         'layout' => 'grid',
+        'variant' => 'warm',
     ])
 
     @include('partials.section-contact-cta')

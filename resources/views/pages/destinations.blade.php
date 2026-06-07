@@ -5,7 +5,7 @@
 @section('meta_description', tr('site.pages.destinations.meta_description'))
 
 @section('content')
-    <div class="border-b border-slate-200/80 py-12 md:py-16">
+    <div class="bareeq-page-head py-12 md:py-16">
         <div class="mx-auto max-w-3xl px-4 text-center md:px-6">
             <h1 class="font-heading text-3xl font-bold text-bareeq-navy md:text-4xl">
                 {{ tr('site.pages.destinations.h1') }}
@@ -21,9 +21,10 @@
         'items' => $destinationShowcaseItems,
         'autoplay' => 5200,
         'theme' => 'destinations',
+        'variant' => 'soft',
     ])
 
-    <div class="border-b border-slate-200/80 py-10 md:py-14" data-reveal>
+    <div class="bareeq-section py-10 md:py-14" data-reveal>
         <div class="mx-auto max-w-3xl px-4 text-center text-slate-600 md:px-6">
             <p>
                 <a

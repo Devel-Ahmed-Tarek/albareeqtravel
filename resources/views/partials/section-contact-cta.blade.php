@@ -1,5 +1,5 @@
 <section
-    class="relative overflow-hidden border-b border-amber-200/30 bg-amber-50/30 py-20 md:py-28"
+    class="relative overflow-hidden bareeq-section bareeq-section--sky py-20 md:py-28"
     data-reveal
     id="section-contact-cta"
     aria-labelledby="contact-cta-title"

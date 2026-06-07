@@ -1,4 +1,4 @@
-<footer class="mt-auto border-t border-slate-200 bg-white py-10">
+<footer class="bareeq-footer mt-auto py-10">
     @php
         $settings = site_settings();
         $logoUrl = $settings->resolvedLogoUrl(asset('images/albareeq-logo.png')) ?? asset('images/albareeq-logo.png');

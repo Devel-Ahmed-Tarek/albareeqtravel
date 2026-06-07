@@ -67,7 +67,7 @@
         <meta name="robots" content="@yield('meta_robots', 'index,follow,max-image-preview:large')" />
         <meta name="author" content="{{ $defaultTitle }}" />
         <meta name="referrer" content="strict-origin-when-cross-origin" />
-        <meta name="theme-color" content="#f8fafc" />
+        <meta name="theme-color" content="#f6f8fb" />
         <title>{{ $metaTitle }}</title>
         <link rel="canonical" href="{{ $canonicalUrl }}" />
         <link rel="alternate" hreflang="ar" href="{{ $alternateAr }}" />
@@ -127,14 +127,18 @@
     </head>
     <body
         data-whatsapp-number="{{ preg_replace('/\D+/', '', (string) site_settings()->whatsapp_number) ?: '966532352749' }}"
-        class="flex min-h-screen flex-col bg-slate-50 text-slate-800 antialiased selection:bg-amber-400/30"
+        class="flex min-h-screen flex-col text-slate-800 antialiased selection:bg-amber-400/30"
     >
         <div
-            class="pointer-events-none fixed inset-0 -z-10 bg-[var(--background-image-hero-mesh)] opacity-40"
+            class="pointer-events-none fixed inset-0 -z-10 bg-[var(--background-image-hero-mesh)] opacity-55"
             aria-hidden="true"
         ></div>
         <div
-            class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_120%_80%_at_50%_-20%,color-mix(in_srgb,#38b6e8_8%,transparent),transparent_55%)]"
+            class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_100%_60%_at_50%_-10%,color-mix(in_srgb,#38b6e8_12%,transparent),transparent_50%)]"
+            aria-hidden="true"
+        ></div>
+        <div
+            class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_80%_50%_at_100%_80%,color-mix(in_srgb,#f4c16a_8%,transparent),transparent_45%)]"
             aria-hidden="true"
         ></div>
 

@@ -5,14 +5,14 @@
 @section('meta_description', app()->getLocale() === 'ar' ? 'أخبار وإعلانات شركة البريق.' : 'News and updates from AlBareeq.')
 
 @section('content')
-    <div class="border-b border-slate-200/80 py-12 md:py-16">
+    <div class="bareeq-page-head py-12 md:py-16">
         <div class="mx-auto max-w-3xl px-4 text-center md:px-6">
             <h1 class="font-heading text-3xl font-bold text-bareeq-navy md:text-4xl">{{ tr('site.pages.news') }}</h1>
             <p class="mt-3 text-slate-600">{{ tr('site.pages.news_lead') }}</p>
         </div>
     </div>
 
-    <section class="py-12 md:py-20" aria-label="{{ tr('site.nav.news') }}" data-reveal>
+    <section class="bareeq-section bareeq-section--soft py-12 md:py-20" aria-label="{{ tr('site.nav.news') }}" data-reveal>
         <div class="mx-auto max-w-6xl px-4 md:px-6">
             <ul class="space-y-6" role="list">
                 @foreach ($items as $n)

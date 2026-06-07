@@ -5,14 +5,14 @@
 @section('meta_description', tr('site.pages.visas.meta_description'))
 
 @section('content')
-    <div class="border-b border-slate-200/80 py-12 md:py-16">
+    <div class="bareeq-page-head py-12 md:py-16">
         <div class="mx-auto max-w-4xl px-4 text-center md:px-6">
             <h1 class="font-heading text-3xl font-bold text-bareeq-navy md:text-4xl">{{ tr('site.pages.visas.h1') }}</h1>
             <p class="mt-3 text-slate-600">{{ tr('site.pages.visas.intro') }}</p>
         </div>
     </div>
 
-    <section class="py-12 md:py-20" data-reveal aria-label="{{ tr('site.nav.visas') }}">
+    <section class="bareeq-section bareeq-section--soft py-12 md:py-20" data-reveal aria-label="{{ tr('site.nav.visas') }}">
         <div class="mx-auto max-w-6xl px-4 md:px-6">
             <div class="mb-8 flex flex-wrap gap-2">
                 <a

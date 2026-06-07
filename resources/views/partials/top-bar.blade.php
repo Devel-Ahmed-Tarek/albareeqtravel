@@ -11,7 +11,7 @@
         ['url' => $settings->social_youtube, 'label' => 'YouTube', 'icon' => 'youtube'],
     ];
 @endphp
-<div class="border-b border-slate-200/80 bg-sky-50/90 backdrop-blur-md">
+<div class="bareeq-top-bar">
     <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-2 text-sm text-slate-600 md:px-6">
         <div class="flex flex-wrap items-center gap-4">
             <a
