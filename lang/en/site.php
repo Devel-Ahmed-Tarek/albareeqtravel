@@ -74,6 +74,9 @@ return [
         'tagline' => 'We light the way to your next journey.',
         'developed_by' => 'Website supervised and developed by:',
     ],
+    'social' => [
+        'aria' => 'Social media accounts',
+    ],
     'offers' => [
         'disclaimer' => 'Website listings are for guidance; availability and final pricing are confirmed on WhatsApp or call.',
     ],

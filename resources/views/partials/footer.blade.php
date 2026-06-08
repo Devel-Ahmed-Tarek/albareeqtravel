@@ -21,6 +21,11 @@
             <div>
                 <p class="font-bold text-bareeq-navy">{{ $siteName }}</p>
                 <p class="mt-1">{{ tr('site.footer.tagline') }}</p>
+                @include('partials.social-links', [
+                    'wrapperClass' => 'mt-4 flex items-center justify-center gap-1.5 sm:justify-start',
+                    'linkClass' => 'rounded-lg border border-slate-200/80 bg-white/70 p-2.5 text-slate-500 shadow-sm transition hover:border-sky-200 hover:bg-sky-50 hover:text-bareeq-blue',
+                    'iconClass' => 'h-4 w-4',
+                ])
             </div>
         </div>
         <nav class="flex max-w-sm flex-wrap justify-center gap-x-4 gap-y-2 md:justify-end" aria-label="Footer">

@@ -20,6 +20,7 @@ class SiteSetting extends Model
         'contact_email',
         'social_facebook',
         'social_instagram',
+        'social_snapchat',
         'social_x',
         'social_linkedin',
         'social_tiktok',

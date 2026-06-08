@@ -82,6 +82,26 @@ if (! function_exists('site_whatsapp_url')) {
     }
 }
 
+if (! function_exists('site_social_links')) {
+    /**
+     * @return list<array{url: string, label: string, icon: string}>
+     */
+    function site_social_links(): array
+    {
+        $settings = site_settings();
+
+        return array_values(array_filter([
+            ['url' => (string) $settings->social_facebook, 'label' => 'Facebook', 'icon' => 'facebook'],
+            ['url' => (string) $settings->social_instagram, 'label' => 'Instagram', 'icon' => 'instagram'],
+            ['url' => (string) $settings->social_snapchat, 'label' => 'Snapchat', 'icon' => 'snapchat'],
+            ['url' => (string) $settings->social_x, 'label' => 'X', 'icon' => 'x'],
+            ['url' => (string) $settings->social_linkedin, 'label' => 'LinkedIn', 'icon' => 'linkedin'],
+            ['url' => (string) $settings->social_tiktok, 'label' => 'TikTok', 'icon' => 'tiktok'],
+            ['url' => (string) $settings->social_youtube, 'label' => 'YouTube', 'icon' => 'youtube'],
+        ], static fn (array $item): bool => filled($item['url'])));
+    }
+}
+
 if (! function_exists('tr')) {
     /**
      * DB-overridable translation with file fallback.

@@ -113,6 +113,7 @@
                 'sameAs' => array_values(array_filter([
                     (string) site_settings()->social_instagram,
                     (string) site_settings()->social_facebook,
+                    (string) site_settings()->social_snapchat,
                     (string) site_settings()->social_x,
                     (string) site_settings()->social_linkedin,
                     (string) site_settings()->social_youtube,

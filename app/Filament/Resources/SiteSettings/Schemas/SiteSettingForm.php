@@ -49,6 +49,7 @@ class SiteSettingForm
                     ->schema([
                         TextInput::make('social_facebook')->url()->maxLength(2048)->label('Facebook URL'),
                         TextInput::make('social_instagram')->url()->maxLength(2048)->label('Instagram URL'),
+                        TextInput::make('social_snapchat')->url()->maxLength(2048)->label('Snapchat URL'),
                         TextInput::make('social_x')->url()->maxLength(2048)->label('X / Twitter URL'),
                         TextInput::make('social_linkedin')->url()->maxLength(2048)->label('LinkedIn URL'),
                         TextInput::make('social_tiktok')->url()->maxLength(2048)->label('TikTok URL'),
